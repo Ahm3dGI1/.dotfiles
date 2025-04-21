@@ -1,0 +1,74 @@
+/* Gruvbox Colors */
+@define-color background #282828;
+@define-color background-alt #353435;
+@define-color background-dark #1D2021;
+@define-color foreground #EBDBB2;
+@define-color selected #458588;
+@define-color active #689d68;
+@define-color urgent #FB4934;
+@define-color border #7C6F64;
+
+/* Font */
+* {
+  font-family: "IosevkaTerm Nerd Font";
+  font-size: 11pt;
+  color: @foreground;
+}
+
+/* Main Window */
+window {
+  background-color: @background;
+  border: 1px solid @border;
+  border-radius: 8px;
+  padding: 0px;
+}
+
+/* Search input */
+#input {
+  margin: 20px;
+  padding: 12px 16px;
+  background-color: @background-alt;
+  color: @foreground;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Entry List Container */
+#inner-box {
+  background-color: @background;
+  padding: 20px;
+  border: none;
+}
+
+/* Outer Box */
+#outer-box {
+  background-color: @background;
+  margin: 0;
+  padding: 0;
+}
+
+/* Entry Items */
+#entry {
+  padding: 12px;
+  margin: 5px 0;
+  background-color: transparent;
+  color: @foreground;
+  border-radius: 8px;
+}
+
+#entry:selected {
+  background-color: @selected;
+  color: @foreground;
+}
+
+/* Optional Message Styling */
+#message {
+  background-color: transparent;
+  padding: 12px;
+  color: @foreground;
+}
+
+/* Scrollbar (hidden like in Rofi) */
+scrollbar, scrollbar slider {
+  all: unset;
+}
